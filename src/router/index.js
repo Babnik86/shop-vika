@@ -19,6 +19,11 @@ const baseRoutes = [
         name: 'cart'
     },
     {
+        path: '/admin',
+        component: AdminPage,
+        name: 'admin'
+    },
+    {
         path: '/:catSlug',
         component: CategoryPage,
         name: 'category'
