@@ -1,5 +1,5 @@
 <template>
-    <div class="flex xs3">
+    <v-flex xs3>
         <v-card>
             <v-card-media
                     class="white--text"
@@ -19,7 +19,7 @@
                 <v-btn flat color="blue" @click="addTols(product.objectId)">Добавить в корзину</v-btn>
             </v-card-actions>
         </v-card>
-    </div>
+    </v-flex>
 </template>
 
 <script>
