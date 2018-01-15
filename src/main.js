@@ -4,7 +4,7 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.css'
 import Backendless from 'backendless'
 import router from './router'
-import VueLocalStorage from 'vue-localstorage'
+import VueLocalStorage from 'vue-ls'
 
 Vue.use(VueLocalStorage);
 

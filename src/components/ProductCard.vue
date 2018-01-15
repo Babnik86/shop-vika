@@ -23,10 +23,6 @@
 </template>
 
 <script>
-    import Vue from 'vue'
-    import VueLocalStorage from 'vue-local-storage'
-
-
     export default {
         name: "product-card",
         props: ['product'],
@@ -44,10 +40,11 @@
                 })
             },
             addTols(id) {
-                window.$localStorage.set('someNumber', 123)
+                this.$ls.set(product)
             }
         },
         created() {
+            console.log()
         }
     }
 </script>
