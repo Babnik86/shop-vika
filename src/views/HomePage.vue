@@ -1,7 +1,7 @@
 <template>
     <div>
-        <input type="text" v-model="search">
-        <v-btn @click="goSearch"></v-btn>
+        <v-text-field label="Поиск" v-model="search" required></v-text-field>
+        <v-btn @click="goSearch"><v-icon> search </v-icon></v-btn>
         <product-list :product-list="productList"></product-list>
     </div>
 </template>

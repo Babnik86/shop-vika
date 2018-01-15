@@ -15,19 +15,24 @@
             </v-card-title>
             <div></div>
             <v-card-actions>
-                <v-btn flat color="orange">Share</v-btn>
-                <v-btn flat color="orange">Explore</v-btn>
+                <v-btn flat color="green">Купить</v-btn>
+                <v-btn flat color="blue" @click="addTols(product.objectId)">Добавить в корзину</v-btn>
             </v-card-actions>
         </v-card>
     </div>
 </template>
 
 <script>
+    import Vue from 'vue'
+    import VueLocalStorage from 'vue-local-storage'
+
+
     export default {
         name: "product-card",
         props: ['product'],
         data() {
-            return {}
+            return {
+            }
         },
         methods: {
             goToCategory(slug) {
@@ -37,6 +42,9 @@
                         catSlug: slug
                     }
                 })
+            },
+            addTols(id) {
+                window.$localStorage.set('someNumber', 123)
             }
         },
         created() {
