@@ -1,16 +1,16 @@
 <template>
-    <v-list>
-        <v-list-tile
+    <v-container>
+        <v-layout
                 value="true"
                 v-for="(item, i) in catList"
                 :key="i"
                 @click="goToCategory(item.slug)"
         >
-            <v-list-tile-content>
-                <v-list-tile-title v-text="item.cat_name"></v-list-tile-title>
-            </v-list-tile-content>
-        </v-list-tile>
-    </v-list>
+            <v-flex>
+                <v-btn block flat> {{item.cat_name}}  <v-icon>keyboard_arrow_right</v-icon></v-btn>
+            </v-flex>
+        </v-layout>
+    </v-container>
 </template>
 
 <script>

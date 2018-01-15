@@ -32,7 +32,9 @@
                 })
             }
         },
-        created() {},
+        created() {
+            console.log()
+        },
         components: { ProductCard }
     }
 </script>
