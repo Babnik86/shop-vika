@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import VueLocalStorage from 'vue-ls';
 import CategoryPage from './../views/CategoryPage'
 import ProductPage from './../views/ProductPage'
 import HomePage from './../views/HomePage'
@@ -9,9 +8,6 @@ import BasketPage from './../views/BasketPage'
 import AdminPage from '../views/admin/AdminPage'
 import LoginPage from './../views/admin/LoginPage'
 import ProductListPage from './../views/admin/ProductListPage'
-
-
-Vue.use(VueLocalStorage);
 
 Vue.use(VueRouter);
 
